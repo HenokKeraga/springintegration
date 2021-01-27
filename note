@@ -17,3 +17,8 @@ Message Channel - it represents a pipe. messages are sent and received to and fr
 DirectChannel - acts like a point to point channel and is the simplest
 
 service activator - acts like a connecter between the spring managed object and the input channel
+@Target(value={METHOD,ANNOTATION_TYPE})
+ @Retention(value=RUNTIME)
+ @Documented
+public @interface ServiceActivator
+Indicates that a method is capable of handling a message or message payload.
