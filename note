@@ -22,3 +22,8 @@ service activator - acts like a connecter between the spring managed object and 
  @Documented
 public @interface ServiceActivator
 Indicates that a method is capable of handling a message or message payload.
+
+Transformer – converts the payload or structure to another form (like for example XML payload to JSON)
+
+There are multiple built in transformers – xml to object (unmarshallers) / object to xml (marshallers), Object to string, File to string, 
+Object serializer/deserialier, Object to map, Object to Json
